@@ -112,14 +112,14 @@ bash capture.sh
 Delete everything before your session ends:
 
 ```bash
-terraform destroy -auto-approve > destroy.log
+terraform destroy -auto-approve
 ```
 
 To replay the lab on the same session, delete it, then clear your old progress and deploy again:
 
 ```bash
 rm -f .started .captured .hints .known_hosts
-terraform apply -auto-approve > apply.log
+terraform apply -auto-approve
 ```
 
 ## The situation
