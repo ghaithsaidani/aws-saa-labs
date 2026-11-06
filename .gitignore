@@ -1,0 +1,28 @@
+# Terraform working files and state
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Local variable files, which may hold secrets
+*.tfvars
+*.tfvars.json
+
+# SSH keys
+lab-key.pem
+lab-key.pem.pub
+*.pem
+
+# AWS credentials
+.aws/
+
+# Local game progress
+.started
+.captured
+.hints
+.known_hosts
+instructor-solutions.md
+
+# Terraform output saved during deployment
+*.log
